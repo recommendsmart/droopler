@@ -1,0 +1,32 @@
+frontend_editing:
+  version: VERSION
+  css:
+    theme:
+      css/frontend_editing.css: {}
+  js:
+    js/frontend_editing.js: {}
+  dependencies:
+    - core/once
+    - core/drupal.ajax
+
+update_content:
+  version: VERSION
+  js:
+    js/update_content.js: {}
+
+forms_helper:
+  version: VERSION
+  js:
+    js/forms_helper.js: {}
+  css:
+    theme:
+      css/forms_helper.css: {}
+  dependencies:
+    - core/drupal.ajax
+
+settings.admin:
+  version: 1
+  js:
+    js/settings.admin.js: {}
+  dependencies:
+    - core/drupal.form

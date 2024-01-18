@@ -1,0 +1,27 @@
+--- themes/claro/css/components/vertical-tabs.pcss.css
++++ themes/claro/css/components/vertical-tabs.pcss.css
+@@ -228,7 +228,6 @@
+ /* This modifier is added by JavaScript (this is inherited from Drupal core). */
+ .vertical-tabs__panes {
+   position: relative;
+-  z-index: 1; /* The wrapper of the details of the vertical tabs should be on a higher level than the vertical tabs menu */
+   top: -1px;
+   margin-top: 0;
+   margin-bottom: 0;
+@@ -241,12 +240,14 @@
+ }
+ 
+ .vertical-tabs .vertical-tabs__panes {
+-  margin-left: var(--vertical-tabs-menu-width); /* LTR */
++  float: left; /* LTR */
++  width: calc(100% - var(--vertical-tabs-menu-width)); /* LTR */
+   border-top-left-radius: 0; /* LTR */
+ }
+ 
+ [dir="rtl"] .vertical-tabs .vertical-tabs__panes {
+-  margin-right: var(--vertical-tabs-menu-width);
++  float: right;
++  width: calc(100% - var(--vertical-tabs-menu-width));
+   margin-left: 0;
+   border-top-left-radius: var(--vertical-tabs-border-radius);
+   border-top-right-radius: 0;

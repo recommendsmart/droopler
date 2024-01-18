@@ -1,0 +1,5 @@
+entity_types: {  }
+sidebar_width: 30
+full_width: 70
+ajax_content_update: true
+exclude_fields: {  }
